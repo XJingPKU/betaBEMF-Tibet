@@ -1,0 +1,11 @@
+Start from the original paired-end reads on the Illumina sequencer:
+1. xxx . (FLASH)
+2. multiple_split_libraries_fastq.py -i analysis_clean_TP/ -o split_libraries/ -m sampleid_by_file --include_input_dir_path --remove_filepath_in_name -p /home/server/desktop/QIIME_parameters.txt (QIIME v1.9.0)
+3. cutadapt -m 280 -o cut_seqs.fna seqs.fna (CUTADAPT v1.9.1)
+4. perl ITSx -i cut_seqs.fasta -o test -t F --cpu 8 (ITSx 1.0.11)
+5. pick_otus.py -i cut_seqs.its2.fasta -m usearch --db_filepath=sh_refs_qiime_ver7_dynamic_s_02.03.2015.fasta -o usearch_qf_results280/ --word_length 64 --non_chimeras_retention=union -g 2 (QIIME v1.9.0)
+6. pick_rep_set.py -i usearch_qf_results280/cut_seqs.its2_otus.txt -f cut_seqs.its2.fasta -o usearch_qf_results280/rep_set.fna (QIIME v1.9.0)
+7. parallel_assign_taxonomy_rdp.py -i usearch_qf_results280/rep_set.fna -r sh_refs_qiime_ver7_dynamic_s_02.03.2015.fasta -t sh_taxonomy_qiime_ver7_dynamic_s_02.03.2015.txt -o rdp_assigned_taxonomy280 --rdp_max_memory 260000 (QIIME v1.9.0)
+8. make_otu_table.py -i usearch_qf_results280/cut_seqs.its2_otus.txt -t rdp_assigned_taxonomy280/rep_set_tax_assignments.txt -o otu_table280.biom (QIIME v1.9.0)
+9. biom convert -i otu_table280.biom -o otu_table.txt --table-type="OTU table" --header-key taxonomy --to-tsv
+10. use excel to open otu_table.txt, remove the sequences that were not assigned to fungi and save.

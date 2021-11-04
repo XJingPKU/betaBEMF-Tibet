@@ -1,0 +1,19 @@
+454 sequencing analysis
+More detailed information can be found in QIIME website [http://qiime.org/tutorials/tutorial.html]
+1. cleaning rawdata
+1.1 obtaining the data
+sffinfo filename.sff > filename.sff.txt
+sffinfo -s filename.sff > filename.fasta
+sffinfo -q filename.sff > filename.qual
+1.2 demultiplex and quality filter reads
+Split_libraries.py -m Fasting_Map.txt  -f filename.fna -q filename.qual -o split_library_output -e 0 -b 7 -n 200000
+2. denoising
+inflate_denoiser_output.py -c centroids.fna -s singletons.fna -f seqs.fna -d denoiser_mapping.txt -o denoised_seqs.fna
+3.De novo OTU picking
+3.1 making OTU table
+pick_otus.py -i denoised_seqs.fna -m uclust
+3.2 pick_rep_set.py -i seqs_otus.txt -f seqs.fna -r refseqs.fasta -o rep_set.fna
+3.3 assign_taxonomy.py -i rep_set.fasta -r ref_seq_set.fna -t id_to_taxonomy.txt
+3.4 make_otu_table.py -i otu_map.txt -t tax_assignments.txt -o otu_table.biom 
+4. convert OTU table format
+convert_biom.py -i otu_table.txt -o otu_table.biom --process_obs_metadata taxonomy --biom_table_type "otu table" 
