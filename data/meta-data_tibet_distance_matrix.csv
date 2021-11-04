@@ -1,0 +1,20 @@
+variable,description
+row,Site code
+col,Site code
+geo,Geographic distance (km)
+clim,Climate distance (Euclidean)
+pH,Soil pH distance (Euclidean)
+EMF,Spatial turnover in overall nutrient pools (Euclidean)
+EMF.plant,Spatial turnover in plant-mediated nutrient pools (Euclidean)
+EMF.soil,Spatial turnover in soil-mediated nutrient pools (Euclidean)
+plant.repl,Plant replacement
+plant.rich,Plant richness difference
+plant.sor,Plant Sorensen beta-diversity index
+bac.repl,Soil bacterial replacement
+bac.rich,Soil bacterial richness difference
+bac.sor,Soil bacterial Sorensen beta-diversity index
+bac.BC,Soil bacterial Bray-Curtis dissimilarity
+fun.repl,Soil fungal replacement
+fun.rich,Soil fungal richness difference
+fun.sor,Soil fungal Sorensen beta-diversity index
+fun.BC,Soil fungal Bray-Curtis dissimilarity
