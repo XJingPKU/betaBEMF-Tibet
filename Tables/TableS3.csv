@@ -1,0 +1,34 @@
+Ecosystem functions,Organisms,beta diversity indices,Mantel rho,pval1,pval2,pval3,LCI,UCI
+Overall,Plant,Sorensen,0.35,0.000,1.000,0.000,0.31,0.39
+,,Replacement,0.07,0.087,0.913,0.173,0.02,0.13
+,,Richness difference,0.19,0.001,0.999,0.001,0.14,0.24
+,Bacteria,Sorensen,0.39,0.000,1.000,0.000,0.35,0.43
+,,Replacement,0.35,0.000,1.000,0.000,0.31,0.39
+,,Richness difference,0.05,0.205,0.795,0.432,0.01,0.08
+,,Bray-Curtis,0.37,0.000,1.000,0.000,0.33,0.42
+,Fungi,Sorensen,0.22,0.000,1.000,0.000,0.18,0.26
+,,Replacement,0.13,0.003,0.997,0.010,0.10,0.18
+,,Richness difference,0.10,0.047,0.953,0.069,0.06,0.15
+,,Bray-Curtis,0.22,0.001,0.999,0.001,0.18,0.28
+Plant mediated,Plant,Sorensen,0.20,0.002,0.998,0.003,0.16,0.25
+,,Replacement,0.02,0.328,0.673,0.663,-0.03,0.08
+,,Richness difference,0.12,0.027,0.973,0.036,0.06,0.17
+,Bacteria,Sorensen,0.17,0.009,0.991,0.011,0.12,0.23
+,,Replacement,0.08,0.095,0.905,0.186,0.04,0.13
+,,Richness difference,0.08,0.100,0.900,0.181,0.03,0.13
+,,Bray-Curtis,0.16,0.013,0.987,0.016,0.11,0.22
+,Fungi,Sorensen,0.13,0.008,0.992,0.009,0.09,0.18
+,,Replacement,0.05,0.177,0.823,0.347,0.00,0.11
+,,Richness difference,0.10,0.062,0.938,0.097,0.04,0.15
+,,Bray-Curtis,0.09,0.102,0.898,0.195,0.04,0.14
+Soil mediated,Plant,Sorensen,0.38,0.000,1.000,0.000,0.36,0.41
+,,Replacement,0.06,0.119,0.881,0.241,0.01,0.12
+,,Richness difference,0.24,0.000,1.000,0.000,0.19,0.28
+,Bacteria,Sorensen,0.43,0.000,1.000,0.000,0.40,0.47
+,,Replacement,0.44,0.000,1.000,0.000,0.39,0.48
+,,Richness difference,0.03,0.303,0.697,0.636,0.00,0.06
+,,Bray-Curtis,0.43,0.000,1.000,0.000,0.39,0.47
+,Fungi,Sorensen,0.23,0.000,1.000,0.000,0.20,0.28
+,,Replacement,0.15,0.001,0.999,0.002,0.11,0.19
+,,Richness difference,0.09,0.038,0.962,0.055,0.05,0.13
+,,Bray-Curtis,0.26,0.000,1.000,0.000,0.23,0.31

@@ -1,0 +1,21 @@
+Response,Predictor,Estimate,SE,z,P
+Plant-mediated pools,Climatic distance,0.12,0.030,3.99,<0.001
+,Bacterial ¦Â-diversity,0.07,0.033,2.23,0.026
+,Plant ¦Â-diversity,0.13,0.030,4.42,<0.001
+,Fungal ¦Â-diversity,-0.06,0.029,-2.09,0.036
+Soil-mediated pools,Climatic distance,0.08,0.027,3.10,0.002
+,pH distance,0.24,0.025,9.39,<0.001
+,Bacterial ¦Â-diversity,0.14,0.031,4.55,<0.001
+,Plant ¦Â-diversity,0.21,0.025,8.56,<0.001
+Plant ¦Â-diversity,Geographic distance,0.16,0.022,7.31,<0.001
+,Climatic distance,0.42,0.021,20.03,<0.001
+Bacterial ¦Â-diversity,Climatic distance,0.28,0.020,14.15,<0.001
+,pH distance,0.29,0.014,20.79,<0.001
+,Plant ¦Â-diversity,0.41,0.019,21.58,<0.001
+Fungal ¦Â-diversity,Geographic distance,0.23,0.020,11.93,<0.001
+,Climatic distance,0.24,0.021,11.80,<0.001
+,Plant ¦Â-diversity,0.31,0.022,13.75,<0.001
+pH distance,Geographic distance,0.10,0.025,3.76,<0.001
+,Climatic distance,0.18,0.025,7.28,<0.001
+Climatic distance,Geographic distance,0.15,0.024,6.54,<0.001
+,,,,,
